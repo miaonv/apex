@@ -24,7 +24,7 @@ $(".close_menu").click(function(){
 window.onresize = function(event) {  
     var img = document.getElementById('bannerImage');  
     if (window.innerWidth < 960) {  
-        img.src = 'asset/images/banner3.png'; // 当宽度小于1000时使用的图片地址  
+        img.src = 'asset/images/banner3_bg.png'; // 当宽度小于1000时使用的图片地址  
     } else {  
         img.src = 'asset/images/banine1.svg'; // 当宽度大于或等于1000时使用的图片地址  
     }  

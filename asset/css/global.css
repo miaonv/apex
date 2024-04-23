@@ -79,30 +79,78 @@ a:hover {text-decoration: none;}
 /*banner*/
 .home_header_bg {background: rgba(0, 118, 189, 0.15);}
 .home_header_bg_fff {background: url(../images/headerbgfff.svg) no-repeat; background-size: cover; }
-.banner_one {background: url(../images/indexbg.svg) left -29em bottom -14em no-repeat; background-size: cover; }
-.banner_one_cont {max-width: 1440px; margin: 0 auto;  padding: 40px; }
-.banner_one_cont .txtcar {
-  padding: 40px; 
-  text-align: center; 
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
+
+/*banner_frist*/
+.banner_frist {}
+.banner_frist_position {
+  top: 20px; 
+  left: 0; 
+  width: 100%; 
+  padding: 10px;
+  box-sizing: border-box;
+  --uk-position-translate-x: 0%;
+  --uk-position-translate-y: 0%;
 }
-.banner_one_cont .txtcar .title {font-family: 'Futura-Bold'; font-size: 99px; color: #333;}
-.banner_one_cont .txtcar .sub_title {font-family: 'Futura-Bold';  font-size: 55px; margin-top: -43px}
-.banner_one_cont .txtcar .sub_desc { font-family: 'Futura-Md-BT'; font-size: 18px; margin-top: 0px; padding-bottom: 20px;}
-.banner_one_cont .txtcar .sub_introduce {padding-bottom: 30px; font-family: 'Futura-Bk-BT'; }
-.banner_one .imgbox { background:red }
-.banner_one .imgbox > img {}
-@media screen and (max-width: 960px) {
-  .banner_one .imgbox { display: none;}
+.banner_cover_one {
+  position: relative;
+  max-width: 1440px; 
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box; 
+}
+.banner_cover { 
+  max-width:50%; 
+  text-align: center;
+}
+.banner_cover h1 {
+  font-family: 'Futura-Bold';
+  font-size: 99px;
+  padding-top: 34px;
+  transition:all 0.56s linear;
+
+}
+.banner_cover h1 span {
+  font-size: 55px;
+  display: block;
+  transition:all 0.56s linear;
+}
+.banner_cover .p1 {
+  font-family: 'Futura-Md-BT'; 
+  font-size: 18px;
+  transition:all 0.56s linear;
+}
+.banner_cover .p2 {
+  transition:all 0.56s linear;
 }
 
-@media screen and (max-width: 1196px) {
-  .banner_one_cont .txtcar .title {font-size: 64px;}
-  .banner_one_cont .txtcar .sub_title {font-size: 35px;}
-  .banner_one_cont .txtcar .sub_desc { font-size: 18px; }
-  .banner_one_cont .txtcar .sub_introduce {font-size: 14px}
+.banner_cove_img {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  max-width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition:all 0.56s linear;
+}
+
+
+@media screen and (max-width: 1037px) {
+  .banner_cover h1 {font-size: 64px; padding-top: 25px; }
+  .banner_cover h1 span {font-size: 35px; }
+}
+
+@media screen and (max-width:  960px) {
+  .banner_cover { max-width:100%; text-align: left; color: #fff;}
+  .banner_cover h1 {color: #fff; }
+  .banner_cove_img {display: none;}
+}
+@media screen and (max-width:  640px) {
+  .banner_cover_one { padding: 10px;}
+  .banner_cover h1 {font-size: 35px; padding-top: 25px; }
+  .banner_cover h1 span {font-size: 35px;}
+  .banner_cover .p1 {margin: 0}
+  .banner_cover .p2 { display:none; }
 }
 
 /*header_number6A708C - 78px*/
@@ -129,12 +177,15 @@ a:hover {text-decoration: none;}
 
 
 
+
 /*about us  background*/
 .index_about {background-image: url(../images/indexbg2 .svg); background-repeat: no-repeat; background-size: cover; background-position: center top ; }
 .index_about .mapsvg {height: 100%; background-image: url(../images/map.svg); background-repeat: no-repeat; background-position: center bottom; }
 .index_about .maxw { max-width: 1440px; margin: 0 auto;  padding: 40px; box-sizing: border-box;}
 .index_about .maxw .numbershow {padding-top: 50px; padding-bottom: 150px; }
-
+@media screen and (max-width:  960px) {
+  .index_about .maxw {padding: 20px; }
+}
 
 .home_about_img { padding: 40px; box-sizing: border-box;}
 @media screen and (max-width: 640px) {
@@ -294,6 +345,10 @@ a:hover {text-decoration: none;}
 /*首页认证 Certifie*/
 .home_certifie { padding:112px 0; }
 .home_certifie_max {padding: 40px; max-width:1440px; margin: 0 auto; box-sizing: border-box;}
+@media screen and (max-width: 960px) {
+  .home_certifie_max {padding: 20px; }
+}
+
 .home_certifie_max .cont {}
 .home_certifie_max .cont .subtitle { font-family: 'Futura-Light'; color: rgba(28, 31, 37, .7);}
 .home_certifie_max .cont > h3 {font-size: 33px; font-family: 'Futura-Bold';}
@@ -407,6 +462,11 @@ a:hover {text-decoration: none;}
   font-family: 'Futura-Bold'; 
   font-size: 35px
 }
+
+@media screen and (max-width: 960px) {
+  .aboout_us_header h1 {padding-top: 0px;}
+}
+
 .aboout_us_header h1 span {
   display: block;
   font-size: 65px;
@@ -505,7 +565,7 @@ a:hover {text-decoration: none;}
 
   .approach_imgbox .imgbox_two .posvg_two {
     position: absolute;
-    bottom: 118px;
+    bottom: 56px;
     left: -67px;
     z-index: -1;
   }
@@ -585,6 +645,16 @@ a:hover {text-decoration: none;}
   font-family: 'Futura-Bold'; 
   font-size: 60px;
 }
+@media screen and (max-width: 640px) {
+  .our_accreditation_max {
+    padding: 20px;
+  }
+  .our_accreditation_max h1 {
+    padding-top: 30px;
+    font-size: 43px;
+  }
+}
+
 .our_accreditation_max p {
   max-width: 800px;
   margin: 0 auto ;
@@ -597,6 +667,11 @@ a:hover {text-decoration: none;}
   margin: 0 auto;
   padding: 100px 0;
 }
+
+@media screen and (max-width: 640px) {
+  .our_accreditation_logo .uk-grid > * {padding-left: 0px; }
+}
+
 
 .our_accreditation_logo img {
   max-width: 85px;
@@ -690,11 +765,27 @@ a:hover {text-decoration: none;}
   font-size: 60px;
   text-align: center;
 }
+
+@media screen and (max-width:  640px) {
+  .meet_team_max {padding: 50px 20px;}
+  .meet_team_max h1 {padding-top: 0px;}
+}
+
 .meet_team_max .subtitle_inc {
   max-width: 700px;
   margin: 0 auto;
   padding-bottom: 80px;
 }
+
+@media screen and (max-width:  960px) {
+  .meet_team_max .subtitle_inc {
+    max-width: 1200px; padding-bottom:0px;
+    text-align: left !important;;
+  }
+}
+
+
+
 .meet_team_cover {}
 .meet_team_cover .text {
   padding-top: 20px;
@@ -703,11 +794,10 @@ a:hover {text-decoration: none;}
 .meet_team_cover img {
   border-radius: 10px;
 }
-
-
 .founders {
   padding: 100px 0;
 }
+
 .founders h3 {
   font-family: 'Futura-Bold'; 
   font-size: 45px;
@@ -719,6 +809,12 @@ a:hover {text-decoration: none;}
   box-sizing: border-box;
   padding: 50px 0;
 }
+@media screen and (max-width: 640px) {
+  .founders {padding: 50px 0 0 0; }
+  .founders_max {padding: 0px 0;}
+  .founders h3 {  padding-bottom: 0px;}
+}
+
 
 .founders_max .founders_pos {}
 .founders_max .founders_pos .card {
@@ -788,6 +884,12 @@ a:hover {text-decoration: none;}
   box-sizing: border-box;
   padding: 0px 40px;
 }
+
+@media screen and (max-width: 640px) {
+  .staff_max { padding: 0px 20px;}
+  .staff_list .uk-position-z-index {display: none;}
+}
+
 .staff_max .uk-navbar-nav > li > a {
   min-height: 50px;
   text-transform: none;
@@ -1160,6 +1262,12 @@ Admissions 报名流程
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 640px) {
+  .high_school_header_max { padding-top: 0px; }
+}
+
+
 .high_school_header_max h1 {
   font-family: 'Futura-Bold';
   font-size:40px;
@@ -1200,7 +1308,7 @@ Admissions 报名流程
   background: url(../images/academics/summer_program.png) no-repeat; 
   background-size:cover; 
   background-position: 50% 50%;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 .summer_program_max {
   box-sizing: border-box;
@@ -1209,7 +1317,7 @@ Admissions 报名流程
 }
 .summer_program_max .uk-list {list-style-color: blue;}
 /*credit_recovery*/
-.credit_recovery {padding: 100px 0;}
+.credit_recovery {padding: 100px 20px; box-sizing: border-box;}
 .credit_recovery h3 {position: relative;}
 .credit_recovery h3 img {
   position: absolute;
@@ -1296,6 +1404,12 @@ Admissions 报名流程
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 640px) {
+  .college_counseling_header_max {padding-top: 0px;}
+}
+
+
 .college_counseling_header_max h1 {
   font-family: 'Futura-Bold';
   font-size:40px;
@@ -1406,6 +1520,9 @@ Admissions 报名流程
 }
 
 
+
+
+
 .current_studen_header_max .cover {}
 .current_studen_header_max .cover video {
   max-width: 545px;
@@ -1419,6 +1536,19 @@ Admissions 报名流程
 .current_studen_header_max .cover video {
   max-width: 100%;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .current_studen_header_max {
+    padding: 0px 20px;
+  }
+  .current_studen_header_max .subh1 {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  .current_studen_header_max .cover p {
+    padding-top: 0px;
+  }
 }
 
 
@@ -1447,6 +1577,12 @@ Admissions 报名流程
   padding: 30px;
   background: url(../images/academics/student_ellipse1.svg) no-repeat right 15% bottom 10%;
 }
+@media screen and (max-width: 640px) {
+  .current_studen_list_max .current_box .photo {
+    padding: 0 0 30px 0;
+  }
+}
+
 .current_studen_list_max .current_box .photo img {
   border-radius: 50%;
   border: 10px solid rgba(57, 114, 202, 0.2);
@@ -1463,7 +1599,6 @@ Admissions 报名流程
     font-size: 20px;
   }
 }
-
 
 /*apply_now_header*/
 .apply_now_header {}
