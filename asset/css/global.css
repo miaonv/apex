@@ -73,9 +73,6 @@ a:hover {text-decoration: none;}
   .header_menu_icon {float: right; display:block; }
 }
 
-
-
-
 /*banner*/
 .home_header_bg {background: rgba(0, 118, 189, 0.15);}
 .home_header_bg_fff {background: url(../images/headerbgfff.svg) no-repeat; background-size: cover; }
@@ -107,7 +104,6 @@ a:hover {text-decoration: none;}
   font-size: 99px;
   padding-top: 34px;
   transition:all 0.56s linear;
-
 }
 .banner_cover h1 span {
   font-size: 55px;
@@ -122,7 +118,6 @@ a:hover {text-decoration: none;}
 .banner_cover .p2 {
   transition:all 0.56s linear;
 }
-
 .banner_cove_img {
   position: absolute;
   right: 0;
@@ -133,13 +128,10 @@ a:hover {text-decoration: none;}
   border-radius: 20px;
   transition:all 0.56s linear;
 }
-
-
 @media screen and (max-width: 1037px) {
   .banner_cover h1 {font-size: 64px; padding-top: 25px; }
   .banner_cover h1 span {font-size: 35px; }
 }
-
 @media screen and (max-width:  960px) {
   .banner_cover { max-width:100%; text-align: left; color: #fff;}
   .banner_cover h1 {color: #fff; }
@@ -149,10 +141,9 @@ a:hover {text-decoration: none;}
   .banner_cover_one { padding: 10px;}
   .banner_cover h1 {font-size: 35px; padding-top: 25px; }
   .banner_cover h1 span {font-size: 35px;}
-  .banner_cover .p1 {margin: 0}
+  .banner_cover .p1 {margin: -20px 0 0 0; }
   .banner_cover .p2 { display:none; }
 }
-
 /*header_number6A708C - 78px*/
 .header_number {margin-top: 0; position: relative; z-index: 888;}
 @media screen and (max-width:  960px) {
@@ -164,6 +155,7 @@ a:hover {text-decoration: none;}
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 3px 8px rgba(0,0,0,.08);
+  margin-top: -77px;
 }
 .hn_card {position: relative;}
 .hn_card img { position:absolute; top:5px; left:0; width:30px; }
@@ -171,12 +163,9 @@ a:hover {text-decoration: none;}
 .hn_card .cont .t1 {font-size: 33px; font-family: 'Futura-Bold';}
 .hn_card .cont .text {margin-top: 3px; font-size: 14px; font-family: 'Futura-Light';}
 @media screen and (max-width:  960px) {
-  .header_number .pad { padding:40px 20px }
+  .header_number .pad { padding:40px 20px; border-radius: 0; margin-top:0px;}
   .hn_card .cont .t1 {font-size: 25px;}
 }
-
-
-
 
 /*about us  background*/
 .index_about {background-image: url(../images/indexbg2 .svg); background-repeat: no-repeat; background-size: cover; background-position: center top ; }
@@ -186,7 +175,6 @@ a:hover {text-decoration: none;}
 @media screen and (max-width:  960px) {
   .index_about .maxw {padding: 20px; }
 }
-
 .home_about_img { padding: 40px; box-sizing: border-box;}
 @media screen and (max-width: 640px) {
   .home_about_img { padding: 0px;}
@@ -202,6 +190,7 @@ a:hover {text-decoration: none;}
 
 @media screen and (max-width: 640px) {
   .index_about .maxw .about_cont {padding: 0px;}
+  .index_about .maxw .about_cont .home_learn_more {text-align: center;}
 }
 
 /*数据展示*/
@@ -283,9 +272,6 @@ a:hover {text-decoration: none;}
   margin-left: 10px;
 }
 
-
-
-
 .home_learn_more { padding-top:10px; }
 .home_learn_more a {font-family: 'Futura-Md-BT'; font-size: 18px;}
 .home_learn_more a .uk-icon-button {background-color: #1e87f0; color: #fff; margin-left: 5px }
@@ -298,7 +284,6 @@ a:hover {text-decoration: none;}
   margin-left: 10px;
   transition:all 0.56s linear;
 }
-
 
 .home_learn_more{
   bottom:  30px;
@@ -317,8 +302,6 @@ a:hover {text-decoration: none;}
 .home_learn_more > a:hover  i {
   margin-left: 10px;
 }
-
-
 
 /*home_postgradua*/
 .home_postgradua {padding: 180px 0 80px 0;  overflow: hidden;}
@@ -419,8 +402,6 @@ a:hover {text-decoration: none;}
 .enterprise_quest .uk-form-danger,.enterprise_quest .uk-form-danger:focus {color: #f0506e; border-color: #f0506e; }
 .enterprise_quest .uk-form-controls .uk-text-danger {padding: 4px 0 0 12px}
 
-
-
 /*footer*/
 .footer {background: #FAFAFA;}
 .footer_max {box-sizing: border-box; max-width: 1440px; margin: 0 auto; padding: 80px 40px 10px 40px; color: #666; }
@@ -441,9 +422,6 @@ a:hover {text-decoration: none;}
 .footer_right h5 {}
 .footer_right p { font-family: 'Futura-Light'; font-size: 14px;}
 .footer_bottom {border-top: 1px solid rgba(34, 34, 51, 0.1); font-size: 14px; margin-top: 30px; padding-top: 10px; color:#1C1F25; opacity: 0.5; }
-
-
-
 
 /*about_us*/
 .about_us {}
@@ -619,19 +597,13 @@ a:hover {text-decoration: none;}
   .our_service_text .enterprise_info ul {padding-bottom: 30px;}
 }
 
-
 /*关于我们-我们认证  our_accreditation*/
-
 .our_accreditation {
-/*  background: url(../images/aboutus/our_accreditation_bg.svg) no-repeat; */
-/*  background: url(../images/aboutus/Group.png) no-repeat; */
   background: url(../images/aboutus/Group5.png) no-repeat; 
   background-size:cover; 
   background-position: 50% 32%;
   text-align: center;
-
 }
-
 .our_accreditation_max {
   max-width: 1440px;
   margin: 0 auto;
@@ -671,7 +643,6 @@ a:hover {text-decoration: none;}
 @media screen and (max-width: 640px) {
   .our_accreditation_logo .uk-grid > * {padding-left: 0px; }
 }
-
 
 .our_accreditation_logo img {
   max-width: 85px;
@@ -713,7 +684,6 @@ a:hover {text-decoration: none;}
   color: #0076BD;
 }
 
-
 .our_accreditation_enter_max .uk-card {
   position: relative;
   box-sizing: border-box;
@@ -725,8 +695,6 @@ a:hover {text-decoration: none;}
     font-family: 'Futura-Bold'; 
   font-size: 31px;
 }
-
-
 
 .our_accreditation_enter_max .uk-card .uk-card-footer {
   position: absolute;
@@ -744,13 +712,11 @@ a:hover {text-decoration: none;}
   }
 }
 
-
 /*Meet Our Team meet_team*/
 .meet_team {
   background: url(../images/aboutus/meetourteambg.svg) no-repeat; 
   background-size:cover; 
   background-position: 50% 32%;
-
 }
 .meet_team_max {
   max-width: 1440px;
@@ -784,8 +750,6 @@ a:hover {text-decoration: none;}
   }
 }
 
-
-
 .meet_team_cover {}
 .meet_team_cover .text {
   padding-top: 20px;
@@ -815,7 +779,6 @@ a:hover {text-decoration: none;}
   .founders h3 {  padding-bottom: 0px;}
 }
 
-
 .founders_max .founders_pos {}
 .founders_max .founders_pos .card {
   background: #F2F4FF;
@@ -838,7 +801,6 @@ a:hover {text-decoration: none;}
   margin-bottom: -30px;
   position: relative;
   padding-bottom: 25px;
-
 }
 .founders_max .founders_pos .name span {
   position: absolute;
@@ -853,16 +815,15 @@ a:hover {text-decoration: none;}
   }
   .founders_max .founders_pos .title {
     padding: 20px 0; 
-    font-size: 18px;
+    font-size: 16px;
   }
   .founders_max .founders_pos .name {
     font-family: 'Futura-Md-BT';
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: -30px;
     position: relative;
     padding-bottom: 25px;
-
   }
   .founders_max .founders_pos .name span {
     position: relative;
@@ -876,7 +837,6 @@ a:hover {text-decoration: none;}
   background: url(../images/aboutus/vector.svg) no-repeat; 
   background-size:cover; 
   background-position: 50% 50%;
-
 }
 .staff_max {
   max-width: 1440px;
@@ -958,7 +918,6 @@ a:hover {text-decoration: none;}
   top: 7px;
 }
 
-
 /*school_locations*/
 .school_locations {
   box-shadow: 0 3px 8px rgba(0, 0, 0, .08);
@@ -1001,8 +960,6 @@ a:hover {text-decoration: none;}
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
-
-
 
 /*
 Admissions 报名流程
@@ -1078,12 +1035,9 @@ Admissions 报名流程
   font-size: 20px; 
   margin-bottom: 50px;
 }
-
 .admissions_step_max .uk-margin-large-bottom  {
   padding-bottom: 50px;
-
 }
-
 .step_box {}
 .step_box .header {
   font-family: 'Futura-Bold';
@@ -1120,12 +1074,6 @@ Admissions 报名流程
   .step_imgbox .plan_study {max-width: 100%;}
 }
 
-
-
-
-
-
-
 .academics_header {
  background: url(../images/admissions/admissions_header.svg) no-repeat; 
   background-size:cover; 
@@ -1146,12 +1094,15 @@ Admissions 报名流程
   margin: 0 auto;
   padding-bottom: 260px;
 }
-
 .academics_header_max_1100 h1 {
   text-align: center;
   font-family: 'Futura-Bold';
   font-size: 45px;
   padding-top: 100px;
+  transition:all 0.56s linear;
+}
+@media screen and (max-width: 640px) {
+  .academics_header_max_1100 h1 { padding-top: 30px;}
 }
 .academics_header_max_1100 div {
   color: #0076BD;
@@ -1177,8 +1128,6 @@ Admissions 报名流程
 @media screen and (max-width: 640px) {
   .academics_cont_max .contbox  {margin-top: -100px; }
 }
-
-
 .academics_cont_max .contbox h2 {
   text-align: center;
   font-family: 'Futura-Bold';
@@ -1187,7 +1136,6 @@ Admissions 报名流程
 .academics_cont_max .contbox {
   padding: 20px;
 }
-
 
 /*academics_program */
 .academics_program {
@@ -1199,11 +1147,9 @@ Admissions 报名流程
 }
 @media screen and (max-width: 1138px) {
   .academics_program {
-      padding: 50px 20px 0px 20px;  overflow: hidden;
+    padding: 50px 20px 0px 20px;  overflow: hidden;
   }
 }
-
-
 .academics_program_max {
   box-sizing: border-box;
   max-width: 1200px;
@@ -1236,8 +1182,6 @@ Admissions 报名流程
 @media screen and (max-width: 640px) {
   .academics_program_box .instructions {padding: 20px; }
 }
-
-
 .academics_program_max .max1000 {
   box-sizing: border-box;
   max-width: 1100px;
@@ -1253,7 +1197,6 @@ Admissions 报名流程
 .academics_program_max .max1000 .imgbox {text-align: center;} 
 .academics_program_max .max1000 .imgbox img  {} 
 
-
 /*High School at APEX*/
 .high_school_header_max {
   max-width: 1120px;
@@ -1262,12 +1205,9 @@ Admissions 报名流程
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 @media screen and (max-width: 640px) {
   .high_school_header_max { padding-top: 0px; }
 }
-
-
 .high_school_header_max h1 {
   font-family: 'Futura-Bold';
   font-size:40px;
@@ -1300,8 +1240,6 @@ Admissions 报名流程
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
-
-
 /*Summer and Part-Time Enrollement*/
 .summer_program {
   box-sizing: border-box;
@@ -1323,21 +1261,18 @@ Admissions 报名流程
   position: absolute;
   left: 0;
   top: -29px;
-
 }
 .credit_recovery .con_pos {position: relative;}
 .credit_recovery .con_pos .ellipse2 {
   position: absolute;
   right: 0;
   top: 0;
-
   z-index: -1;
 }
 .credit_recovery .con_pos .ellipse3 {
   position: absolute;
   left: -112px;
   top: 209px;
-
   z-index: -1;
 }
 
@@ -1367,15 +1302,12 @@ Admissions 报名流程
 }
 
 .lowschool_program {
-    background: url(../images/academics/vector3.svg);
-    background-repeat: repeat-y; 
-    background-position: 50% 0%;
-    padding: 100px 20px 0px 20px;  
-    overflow: hidden;
+  background: url(../images/academics/vector3.svg);
+  background-repeat: repeat-y; 
+  background-position: 50% 0%;
+  padding: 100px 20px 0px 20px;  
+  overflow: hidden;
 }
-
-
-
 .lowschool .uk-card {position: relative;}
 .lowschool .uk-card .imgpos {position: absolute; left: 0; bottom: 0;}
 @media screen and (max-width: 640px) {
@@ -1386,7 +1318,6 @@ Admissions 报名流程
 @media screen and (max-width: 640px) {
   .padleft50px {padding-left: 20px;}
 }
-
 
 /*college_counseling*/
 .college_counseling {}
@@ -1409,7 +1340,6 @@ Admissions 报名流程
   .college_counseling_header_max {padding-top: 0px;}
 }
 
-
 .college_counseling_header_max h1 {
   font-family: 'Futura-Bold';
   font-size:40px;
@@ -1430,9 +1360,8 @@ Admissions 报名流程
   margin: 0 auto;
 }
 
-
 .college_counseling_max {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .college_counseling_max .text_1 {
@@ -1444,7 +1373,6 @@ Admissions 报名流程
   max-width: 800px;
   margin: 0 auto;
 }
-
 
 /*Post-Graduation*/
 .post_graduation_header_max {
@@ -1479,7 +1407,6 @@ Admissions 报名流程
   padding: 100px 0;
 }
 
-
 .post_graduation_cont_max {
   max-width: 1100px;
   margin: 0 auto;
@@ -1499,7 +1426,6 @@ Admissions 报名流程
   padding-top: 40px;
 }
 
-
 /*current_studen*/
 .current_studen_header_max {
   max-width: 1200px;
@@ -1518,10 +1444,6 @@ Admissions 报名流程
   text-align: center;
   padding-bottom: 50px;
 }
-
-
-
-
 
 .current_studen_header_max .cover {}
 .current_studen_header_max .cover video {
@@ -1551,7 +1473,6 @@ Admissions 报名流程
   }
 }
 
-
 /*current_studen_list*/
 .current_studen_list {
   background: url(../images/academics/currentstudent_bg3.svg);
@@ -1568,38 +1489,24 @@ Admissions 报名流程
 .current_studen_list_max h3 {
   font-size: 40px;
 }
-
-.current_studen_list_max .current_box {
-
-}
+.current_studen_list_max .current_box {}
 .current_studen_list_max .current_box .photo {
   text-align: center;
   padding: 30px;
   background: url(../images/academics/student_ellipse1.svg) no-repeat right 15% bottom 10%;
 }
 @media screen and (max-width: 640px) {
-  .current_studen_list_max .current_box .photo {
-    padding: 0 0 30px 0;
-  }
+  .current_studen_list_max .current_box .photo {padding: 0 0 30px 0;}
 }
-
 .current_studen_list_max .current_box .photo img {
   border-radius: 50%;
   border: 10px solid rgba(57, 114, 202, 0.2);
 }
-.current_studen_list_max .current_box .cont {
-  text-align: center;
-}
-.current_studen_list_max .current_box .cont h5 {
-  font-size: 30px;
-}
-
+.current_studen_list_max .current_box .cont {text-align: center;}
+.current_studen_list_max .current_box .cont h5 {font-size: 30px;}
 @media screen and (max-width: 640px) {
-  .current_studen_list_max .current_box .cont h5 {
-    font-size: 20px;
-  }
+  .current_studen_list_max .current_box .cont h5 {font-size: 20px;}
 }
-
 /*apply_now_header*/
 .apply_now_header {}
 .apply_now_header_max_1920 {
@@ -1646,7 +1553,6 @@ Admissions 报名流程
   .apply_now_from {margin-top: 0px; }
 }
 
-
 .apply_now_from_max {
   max-width: 1200px;
   margin: 0 auto;
@@ -1660,49 +1566,16 @@ Admissions 报名流程
 @media screen and (max-width: 640px) {
  .apply_now_from_max {padding: 20px;}
 }
-
-
-
-.apply_now_from_max h2 {
-  font-size: 25px;
-}
-
+.apply_now_from_max h2 {font-size: 25px;}
 .apply_now_from_max form {}
-.apply_now_from_max form label {
-  font-family: 'Futura-Md-BT';
-  font-size: 18px;
-  color: #999;
-}
-.apply_now_from_max form label > span {
-  color: red;
-}
-
-.apply_now_from_max form input {
-  font-family: 'Futura-Bk-BT';
-  font-size: 16px;
-
-}
-.apply_now_from_max form input::placeholder {
-  font-family: 'Futura-Bk-BT';
-  color: #909090; 
-  font-style: italic;
-}
-
-
+.apply_now_from_max form label {font-family: 'Futura-Md-BT'; font-size: 18px; color: #999; } 
+.apply_now_from_max form label > span {color: red;} 
+.apply_now_from_max form input {font-family: 'Futura-Bk-BT'; font-size: 16px; } 
+.apply_now_from_max form input::placeholder {font-family: 'Futura-Bk-BT'; color: #909090; font-style: italic; }
 .apply_now_from_successful_box {}
 .apply_now_from_successful_box img {}
-.apply_now_from_successful_box h5 {
-  font-size:25px;
-}
+.apply_now_from_successful_box h5 {font-size:25px;}
 .apply_now_from_successful_box p {}
-
-
-
-
-
-
-
-
 
 
 
