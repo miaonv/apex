@@ -72,17 +72,32 @@ a:hover {text-decoration: none;}
   .header_menu_inner .menu_dropdown > ul > li > a:hover { color:#1e87f0}
   .header_menu_icon {float: right; display:block; }
 }
+
+
+
+
+/*banner*/
 .home_header_bg {background: rgba(0, 118, 189, 0.15);}
 .home_header_bg_fff {background: url(../images/headerbgfff.svg) no-repeat; background-size: cover; }
 .banner_one {background: url(../images/indexbg.svg) left -29em bottom -14em no-repeat; background-size: cover; }
 .banner_one_cont {max-width: 1440px; margin: 0 auto;  padding: 40px; }
-.banner_one_cont .txtcar {padding: 40px 40px 40px 40px; text-align: center; color: #333;}
+.banner_one_cont .txtcar {
+  padding: 40px; 
+  text-align: center; 
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
 .banner_one_cont .txtcar .title {font-family: 'Futura-Bold'; font-size: 99px; color: #333;}
 .banner_one_cont .txtcar .sub_title {font-family: 'Futura-Bold';  font-size: 55px; margin-top: -43px}
 .banner_one_cont .txtcar .sub_desc { font-family: 'Futura-Md-BT'; font-size: 18px; margin-top: 0px; padding-bottom: 20px;}
 .banner_one_cont .txtcar .sub_introduce {padding-bottom: 30px; font-family: 'Futura-Bk-BT'; }
-.banner_one .imgbox {  }
+.banner_one .imgbox { background:red }
 .banner_one .imgbox > img {}
+@media screen and (max-width: 960px) {
+  .banner_one .imgbox { display: none;}
+}
+
 @media screen and (max-width: 1196px) {
   .banner_one_cont .txtcar .title {font-size: 64px;}
   .banner_one_cont .txtcar .sub_title {font-size: 35px;}
@@ -90,8 +105,8 @@ a:hover {text-decoration: none;}
   .banner_one_cont .txtcar .sub_introduce {font-size: 14px}
 }
 
-/*header_number6A708C*/
-.header_number {margin-top: -78px; position: relative; z-index: 888;}
+/*header_number6A708C - 78px*/
+.header_number {margin-top: 0; position: relative; z-index: 888;}
 @media screen and (max-width:  960px) {
   .header_number {margin-top:  0px; position: relative; z-index: 888;}
 }
@@ -107,6 +122,12 @@ a:hover {text-decoration: none;}
 .hn_card .cont { padding-left:48px; }
 .hn_card .cont .t1 {font-size: 33px; font-family: 'Futura-Bold';}
 .hn_card .cont .text {margin-top: 3px; font-size: 14px; font-family: 'Futura-Light';}
+@media screen and (max-width:  960px) {
+  .header_number .pad { padding:40px 20px }
+  .hn_card .cont .t1 {font-size: 25px;}
+}
+
+
 
 /*about us  background*/
 .index_about {background-image: url(../images/indexbg2 .svg); background-repeat: no-repeat; background-size: cover; background-position: center top ; }

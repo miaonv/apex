@@ -80,14 +80,16 @@
             <div class="home_header_bg_fff">
                 <!-- banner -->
                 <div class="banner">
-                    <div uk-slideshow="animation: slide; min-height: 300; max-height: 600;">
+                    <div uk-slideshow="animation: slide;  max-height: 800;">
                         <div class="uk-position-relative uk-visible-toggle " tabindex="-1" >
                             <div class="uk-slideshow-items">
                                 <div class="banner_one">
-                                    <img src="asset/images/banine1.svg" alt="" uk-cover>
-                                    <div class="banner_one_cont uk-position-center">
-                                        <div class="uk-grid-small uk-grid-column-collapse uk-child-width-1-1 uk-child-width-1-2@m " uk-grid>
-                                            <div class="txtcar">
+                                    <!-- <img src="asset/images/banine1.svg" alt="" uk-cover> -->
+                                    <img id="bannerImage" src="asset/images/banine1.svg" alt="" uk-cover>
+
+                                    <div class="banner_one_cont uk-position-center"><!-- uk-position-center -->
+                                        <div class="" uk-grid>
+                                            <div class="txtcar uk-width-1-2@m ">
                                                 <h2 class="title">APEX</h2>
                                                 <div class="sub_title">Global Academy</div>
                                                 <div class="sub_desc">teach according to one’s student’s ability</div>
@@ -101,20 +103,22 @@
                                                 </div>
                                            
                                             </div>
-                                            <div class="imgbox ">
+                                            <div class="imgbox uk-width-1-2@m " >
                                                 <img src="asset/images/banner3.png">
                                             </div>
-                                        </div>
+                                        </div><!-- uk-grid -->
                                     </div>
                                 </div>
-                                <!-- <div>
+
+
+                                 <div>
                                     <img src="asset/images/banner2.png" alt="" uk-cover>
                                     <div class="banner_text uk-position-center uk-text-center ">
                                         <h2 class="uk-margin-remove uk-light uk-animation-slide-left-medium">
                                             APEX Global Academy
                                         </h2>
                                     </div>
-                                </div> -->
+                                </div> 
                             </div>
 
                             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
