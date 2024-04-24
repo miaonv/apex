@@ -1572,10 +1572,75 @@ Admissions 报名流程
 .apply_now_from_max form label > span {color: red;} 
 .apply_now_from_max form input {font-family: 'Futura-Bk-BT'; font-size: 16px; } 
 .apply_now_from_max form input::placeholder {font-family: 'Futura-Bk-BT'; color: #909090; font-style: italic; }
-.apply_now_from_successful_box {}
+.apply_now_from_successful_box {padding: 60px 0 100px 0}
+.apply_now_from_failure_box {padding: 60px 0 100px 0}
 .apply_now_from_successful_box img {}
-.apply_now_from_successful_box h5 {font-size:25px;}
-.apply_now_from_successful_box p {}
+.apply_now_from_successful_box h5 {font-size:35px;}
+.apply_now_from_failure_box h5 {font-size:35px;}
+.apply_now_from_successful_box p {color: #1C1F25; opacity: 0.7; font-size: 20px; }
+.apply_now_from_failure_box p {color: #1C1F25; opacity: 0.7; font-size: 20px; }
+.apply_now_from_failure_box .contact {color: #1C1F25; opacity: 0.7; font-size: 18px; padding-bottom: 5px; }
+
+
+
+/*submit_inquiry*/
+.submit_inquiry {
+  box-sizing: border-box;
+  background: url(../images/submit_inquiry_bg.svg) no-repeat; 
+  background-size:cover; 
+  padding:150px 20px;
+  transition:all 0.56s linear;
+}
+.submit_inquiry_max {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.submit_inquiry_max h1 {}
+.submit_inquiry_max p {
+  color: #1C1F25;
+  opacity: 0.7;
+  font-size: 24px;
+  padding-top: 10px;
+  transition:all 0.56s linear;
+}
+
+.congratulations {
+  padding:160px 20px; 
+  box-sizing: border-box;
+  transition:all 0.56s linear;
+}
+
+.congratulations_max {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.congratulations_max h4 {
+  padding-bottom: 30px;
+  transition:all 0.56s linear;
+}
+.congratulations_max p {
+  line-height: 34px;
+  color: #1C1F25;
+  opacity: 0.8;
+  font-size: 18px;
+  padding-top: 20px;
+  transition:all 0.56s linear;
+}
+.congratulations_max video {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .submit_inquiry {padding:50px 20px;}
+  .congratulations {padding:100px 20px; }
+  .congratulations_max h4 {padding-bottom: 0px;}
+  .congratulations_max p {padding-top: 0px;}
+}
+
+
+
 
 
 
