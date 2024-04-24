@@ -1640,6 +1640,32 @@ Admissions 报名流程
 }
 
 
+/*404*/
+.not_fonud {}
+.not_fonud_max {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px 50px 20px;
+  transition:all 0.56s linear;
+}
+.not_fonud_max h5 {
+  color: #333955;
+  opacity: 1;
+  padding-top: 50px; margin: 0; font-family: 'Futura-Heavy'; font-size: 20px}
+.not_fonud_max h4 {font-size: 34px}
+.not_fonud_max .blue{ color: #0076BD; }
+.not_fonud_max .red{color: #E40710;}
+.not_fonud_max p {
+    color: #1C1F25;
+  opacity: 0.7;
+}
+.not_fonud_max img {transition:all 0.56s linear;}
+@media screen and (max-width: 779px) {
+  .not_fonud_max img { margin-top:50px }
+}
+
+
 
 
 
