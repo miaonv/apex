@@ -75,7 +75,10 @@ a:hover {text-decoration: none;}
 
 /*banner*/
 .home_header_bg {background: rgba(0, 118, 189, 0.15);}
-.home_header_bg_fff {background: url(../images/headerbgfff.svg) no-repeat; background-size: cover; }
+.home_header_bg_fff {
+/*  max-width: 1440px;*/
+  margin: 0 auto;
+  background: url(../images/headerbgfff.svg) no-repeat; background-size: cover; }
 
 /*banner_frist*/
 .banner_frist {}
