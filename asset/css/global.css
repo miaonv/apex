@@ -205,10 +205,10 @@ a:hover {text-decoration: none;}
 }
 
 
-@media screen and (max-width:  437px) {
+@media screen and (max-width:  442px) {
   .banner_text_inner h2 {
     font-size: 20px;
-    margin-top: 85px;
+    margin-top: 90px;
   }
   .banner_text_inner h3 {
     font-size: 16px;
