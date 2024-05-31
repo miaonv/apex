@@ -156,70 +156,72 @@ a:hover {text-decoration: none;}
 }
 .banner_text_inner {
   max-width: 1200px;
+  height: 100%;
   padding: 20px;
   margin: 0 auto;
   box-sizing: border-box;
+/*  background: #f90;*/
+  position: relative;
 }
-.banner_text_inner h2 {
+.post_inner_bottom {
+  position: absolute;
+  bottom: 20%;
+}
+
+.post_inner_bottom h2 {
   color: #333;
   font-size: 43px;
-  margin-top: 197px;
   margin-bottom: 0px;
 }
-.banner_text_inner h3 {
+.post_inner_bottom h3 {
   font-size: 27px;
 }
-.banner_text_inner p {
+.post_inner_bottom p {
   max-width: 500px;
   font-size: 20px;
 }
 
-@media screen and (max-width:  782px) {
-  .banner_text_inner h2 {
-    font-size: 38px;
-    margin-top: 140px;
-  }
-  .banner_text_inner h3 {
-    font-size: 23px;
-  }
-  .banner_text_inner p {
-    max-width: 500px;
-    font-size: 18px;
+@media screen and (max-width:  960px) {
+  .post_inner_bottom {
+    position: absolute;
+    bottom: 10%;
   }
 }
 
 @media screen and (max-width:  640px) {
-  .banner_text_inner h2 {
-    font-size: 30px;
-    margin-top: 84px;
+  .post_inner_bottom h2 {
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 0px;
   }
-  .banner_text_inner h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
+  .post_inner_bottom h3 {
+    font-size: 20px;
+    margin: 0;
   }
-  .banner_text_inner p {
+  .post_inner_bottom p {
     max-width: 500px;
     font-size: 16px;
-    margin-top: 0px;
+    margin: 0;
   }
 }
-
-
-@media screen and (max-width: 442px) {
-  .banner_text_inner h2 {
-    font-size: 20px;
-    margin-top: 84px;
+@media screen and (max-width:  423px) {
+  .post_inner_bottom h2 {
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 0px;
   }
-  .banner_text_inner h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+  .post_inner_bottom h3 {
+    font-size: 18px;
+    margin: 0;
   }
-  .banner_text_inner p {
+  .post_inner_bottom p {
     max-width: 500px;
     font-size: 14px;
-    margin-top: 0px;
+    margin: 0;
   }
 }
+
+
 
 
 /*header_number6A708C - 78px*/
@@ -264,7 +266,7 @@ a:hover {text-decoration: none;}
 .index_about .maxw .about_cont .title {padding-top: 30px; display: inline-block; font-family: 'Futura-Bold';}
 .index_about .maxw .about_cont .sub_title {margin-top: -10px; font-family: 'Futura-Md-BT'; color: rgba(28, 31, 37, .7); }
 .index_about .maxw .about_cont .cont {padding-top: 20px; }
-.index_about .maxw .about_cont .cont p {line-height: 31px; font-family: 'Futura-Light'; }
+.index_about .maxw .about_cont .cont p {line-height: 28px; font-family: 'Futura-Light'; }
 
 @media screen and (max-width: 640px) {
   .index_about .maxw .about_cont {padding: 0px;}

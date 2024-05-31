@@ -22,7 +22,27 @@ $(".close_menu").click(function(){
 
 
 
+// select 元素中选择的 option 来显示或隐藏一个 div
 
+$(document).ready(function() {  
+    $('#mySelect').change(function() {  
+        var selectedValue = $(this).val(); // 获取选中的option的值  
+        var $myDiv = $('#myDiv'); // 获取div的jQuery对象  
+  
+        // 根据选中的值来决定是否显示div  
+        if (selectedValue === 'other') {  
+            $myDiv.show(); // 如果选中的是option3，则显示div  
+        } else {  
+            $myDiv.hide(); // 否则隐藏div  
+        }  
+    });  
+  
+    // 如果你想在页面加载时根据默认选中的option来显示或隐藏div，可以添加以下代码  
+    // var defaultSelectedValue = $('#mySelect').val();  
+    // if (defaultSelectedValue === 'other') {  
+    //     $('#myDiv').hide();  
+    // }  
+});
 
 
 // 返回页面顶部 初始化滚动组件
@@ -115,16 +135,34 @@ $(".close_school_list").click(function(){
 
 
 // 第一页banner 替换cover封面图片
-window.onresize = function(event) {  
-    var img = document.getElementById('bannerImage');  
-    if (window.innerWidth < 960) {  
-        img.src = 'asset/images/banner3_bg.png'; // 当宽度小于1000时使用的图片地址  
-    } else {  
-        img.src = 'asset/images/banine1.svg'; // 当宽度大于或等于1000时使用的图片地址  
-    }  
-};  
+// window.onresize = function(event) {  
+//     var img = document.getElementById('bannerImage');  
+//     if (window.innerWidth < 960) {  
+//         img.src = 'asset/images/banner3_bg.png'; // 当宽度小于1000时使用的图片地址  
+//     } else {  
+//         img.src = 'asset/images/banine1.svg'; // 当宽度大于或等于1000时使用的图片地址  
+//     }  
+// };  
   
 // 在页面加载时也执行一次，以确保在页面首次加载时图片大小也正确  
-window.onresize();  
+// window.onresize();  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

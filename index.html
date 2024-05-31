@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="asset/plug-in/uikit-3.19.4/css/uikit.css">
     <link rel="stylesheet" href="asset/plug-in/swiper11/swiper-bundle.min.css">
     <link rel="stylesheet" href="asset/fonts/fonts.css">
-    <link rel="stylesheet" href="asset/css/global.css?v=0.13">
+    <link rel="stylesheet" href="asset/css/global.css?v=0.14">
     <title>APEX Global Academy</title>
 </head>
 <body>
@@ -118,13 +118,15 @@
                                     <img src="asset/images/banner3.2.jpg" alt="" uk-cover>
                                     <div class="banner_text uk-position-top-left">
                                         <div class="banner_text_inner">
-                                            <h2 class=" uk-light uk-animation-slide-left-medium">
-                                                APEX Global Academy
-                                            </h2>
-                                            <h3>Tailored Teaching for Every Student</h3>
-                                            <p>
-                                                We offer tailored learning paths and diverse courses to cater to each student's unique interests and abilities, ensuring they thrive.
-                                            </p>
+                                            <div class="post_inner_bottom">
+                                                <h2 class=" uk-light uk-animation-slide-left-medium">
+                                                    APEX Global Academy
+                                                </h2>
+                                                <h3>Tailored Teaching for Every Student</h3>
+                                                <p>
+                                                    We offer tailored learning paths and diverse courses to cater to each student's unique interests and abilities, ensuring they thrive.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div> 
@@ -141,7 +143,7 @@
                 <!-- number -->
                 <div class="header_number">
                     <div class="max1200">
-                        <div class="pad">
+                        <div class="pad" >
                             <div class="uk-grid-match uk-grid-small uk-grid-column-collapse uk-child-width-1-2 uk-child-width-1-4@m " uk-grid>
                                 <div>
                                     <div class="uk-card ">
@@ -842,13 +844,13 @@
                                         <label class="uk-form-label" for="form-stacked-text">Subject <span>*</span></label>
                                         <div class="uk-form-controls">
                                             <div class="uk-form-controls">
-                                                <select class="uk-select uk-form-large" id="form-horizontal-select">
+                                                <select id="mySelect" class="uk-select uk-form-large" id="form-horizontal-select">
                                                     <option value="">Please select...</option>
                                                     <option value="1">Lower School Curriculum</option>
                                                     <option value="2">High School Programs</option>
                                                     <option value="3">High School Curriculum</option>
                                                     <option value="4">College Counseling</option>
-                                                    <option value="5">Other</option>
+                                                    <option value="other">Other</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -859,6 +861,14 @@
                                             <input class="uk-input uk-form-large" id="form-stacked-text" type="text" placeholder="Some text...">
                                         </div>
                                     </div>
+
+                                    <div id="myDiv" class="uk-width-1-1" style="display: none;">  
+                                        <label class="uk-form-label" for="form-stacked-text">Other Subject<span>*</span></label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input uk-form-large " id="form-stacked-text" type="text" placeholder="Enter your message here...">
+                                        </div>
+                                    </div>
+
                                     <div class="uk-width-1-1">
                                         <label class="uk-form-label" for="form-stacked-text">Type Your Message Here</label>
                                         <div class="uk-form-controls">
