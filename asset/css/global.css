@@ -314,10 +314,10 @@ a:hover {text-decoration: none;}
 .phome_academics_box_link .img {}
 .phome_academics_box_link .describe {padding: 40px 20px 50px 20px;}
 .phome_academics_box_link .describe h4 {
-  font-family: 'Futura-Bold'; font-size: 25px;
+  font-family: 'Futura-Bold'; font-size: 19px;
 }
 @media screen and (max-width: 1300px) {
-  .phome_academics_box_link .describe h4 {font-size: 20px; }
+  .phome_academics_box_link .describe h4 {font-size: 25px; }
 }
 
 .phome_academics_box_link .describe p {
@@ -326,12 +326,24 @@ a:hover {text-decoration: none;}
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height:72px ; 
+  min-height: 85px; 
   color: rgba(28, 31, 37, .7); 
   line-height: 24px;
   font-family: 'Futura-Bk-BT';
   font-size: 18px;
 }
+
+@media screen and (max-width: 1222px) {
+  .phome_academics_box_link .describe p {
+    min-height: 100px; 
+  }
+}
+@media screen and (max-width: 960px) {
+  .phome_academics_box_link .describe p {
+    min-height: 70px; 
+  }
+}
+
 
 .phome_academics_box_link .link_but {
   position: absolute;
@@ -431,6 +443,7 @@ a:hover {text-decoration: none;}
 .swiper-slide {width: auto; background: #fff; box-shadow: none; border-radius: 10px; transition: box-shadow 0.3s; /* 平滑过渡阴影变化 */ }
 .swiper-slide-active {-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.08);; box-shadow: 0 5px 15px rgba(0,0,0,.08); }
 .star_circle_Swiper .card {box-sizing: border-box; width: 471px; height: auto; padding: 40px; }
+.star_circle_Swiper .card p {padding:0 20px}
 .star_circle_Swiper .card .uk-card-header .quotes {font-family: '-apple-system'; font-size: 100px; position: absolute; right:45px; top: 10px; background: -webkit-linear-gradient(#CCDBFD, #fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; }
 /*swiper控制*/
 .star_circle_controls {width: 200px; margin: 0 auto; padding-top: 100px; }
